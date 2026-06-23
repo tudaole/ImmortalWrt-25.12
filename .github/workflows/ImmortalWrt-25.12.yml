@@ -25,7 +25,7 @@ env:
   TZ: Asia/Shanghai
 
   UPLOAD_BIN_DIR: false
-  UPLOAD_FIRMWARE: false
+  UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
 
 jobs:
@@ -131,7 +131,7 @@ jobs:
         rm -rf packages
         rm -f *rootfs* *kernel* *.manifest *.buildinfo
         DATE=$(TZ=Asia/Shanghai date +"%Y%m%d")             
-        for file in *.img.gz *.bin *.qcow2 *.vdi *.vmdk; do
+        for file in *.img.gz *.bin *.qcow2 *.vdi *.vmdk *combined.img.gz *.json sha256sums; do
           [ -f "$file" ] || continue
           EXT="${file##*.}"             
           NAME="${file%.*}"             
