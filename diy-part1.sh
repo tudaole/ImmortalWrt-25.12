@@ -28,9 +28,6 @@ git clone https://github.com/sirpdboy/luci-app-netdata package/luci-app-netdata
 # 添加 oaf
 git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 
-# 添加 openclaw
-# git clone https://github.com/10000ge10000/luci-app-openclaw.git package/luci-app-openclaw
-
 # 添加 poweroffdevice
 git clone https://github.com/sirpdboy/luci-app-poweroffdevice.git package/luci-app-poweroffdevice
 
@@ -39,7 +36,9 @@ git clone https://github.com/EasyTier/luci-app-easytier.git package/luci-app-eas
 
 # 添加 istore
 git clone https://github.com/linkease/istore-ui package/luci-app-store-ui
-git clone https://github.com/linkease/istore package/luci-app-store# mihomo
+git clone https://github.com/linkease/istore package/luci-app-store
+
+# 添加 mihomo
 echo "src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main" >> "feeds.conf.default"
 
 # 添加 mosdns
